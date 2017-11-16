@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="website.copyandpaste.bottombarnavigationwithnavigationdrawer.MainActivity2">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar4"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:popupTheme="@style/Theme.AppCompat.Light">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Campus's life"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+    </Toolbar>
+
+    <android.support.design.widget.TabLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/tablayout5"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/colorPrimaryLight"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/pager5" />
+
+</LinearLayout>
